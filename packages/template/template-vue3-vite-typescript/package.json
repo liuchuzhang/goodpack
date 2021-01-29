@@ -1,0 +1,8 @@
+{
+  "name": "@goodpack/template-vue3-vite-typescript",
+  "version": "0.0.1",
+  "description": "A template for Goodpack with Vue-next and Typescript",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

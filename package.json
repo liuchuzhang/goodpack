@@ -5,6 +5,11 @@
   "author": "liuchuzhang <liuchuzhang1@gmail.com>",
   "homepage": "https://github.com/liuchuzhang/goodpack#readme",
   "license": "MIT",
+  "keywords": [
+    "goodpack",
+    "web",
+    "bundle"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:liuchuzhang/goodpack.git"
@@ -12,31 +17,18 @@
   "bugs": {
     "url": "https://github.com/liuchuzhang/goodpack/issues"
   },
-  "bin": {
-    "goodpack": "bin/index.js"
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --scope=goodpack",
+    "build:watch": "lerna run build:watch --parallel --scope=goodpack",
+    "bundle": "lerna run bundle --scope=goodpack",
+    "publish": "npm run build && npm run bundle && lerna publish --no-private",
+    "lint": "lerna run lint --parallel --scope=goodpack",
+    "format": "prettier --write '{packages}/**/*.{ts,js,json}'",
+    "test": "jest --test-timeout=30000"
   },
   "dependencies": {
-    "address": "^1.1.2",
-    "case-sensitive-paths-webpack-plugin": "^2.3.0",
-    "chalk": "^4.1.0",
-    "friendly-errors-webpack-plugin": "^1.7.0",
-    "html-webpack-plugin": "^4.5.1",
-    "mini-css-extract-plugin": "^1.3.4",
-    "node-sass": "^5.0.0",
-    "portfinder": "^1.0.28",
-    "react-dev-utils": "^11.0.1",
-    "sass-loader": "^10.1.1",
-    "style-loader": "^2.0.0",
-    "thread-loader": "^3.0.1",
-    "vue-loader": "^15.9.6",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.16.0",
-    "webpack-bundle-analyzer": "^4.3.0",
-    "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.7.3"
-  },
-  "devDependencies": {
-    "eslint": "^7.18.0"
+    "lerna": "^3.22.1",
+    "typescript": "^4.1.3"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "name": "@goodpack/template-vue-vite",
+  "version": "0.0.1",
+  "description": "A template for Goodpack with Vue",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
