@@ -1,0 +1,8 @@
+{
+  "name": "@goodpack/template-react-vite-typescript",
+  "version": "0.0.1",
+  "description": "A template for Goodpack with React and Typescript",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

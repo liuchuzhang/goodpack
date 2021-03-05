@@ -1,0 +1,8 @@
+{
+  "name": "@goodpack/template-vue-typescript",
+  "version": "0.0.1",
+  "description": "A template for Goodpack with Vue and Typescript",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
